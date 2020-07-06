@@ -6,13 +6,7 @@ const form = document.getElementById('form');
 const text = document.getElementById('text');
 const amount = document.getElementById('amount');
 const localStorageTransactions = JSON.parse(localStorage.getItem('transactions'));
-// const dummyTransactions = [
-// {id: 1, text: "Flower", amount: -20},
-// {id: 2, text: 'Waffles', amount: -110},
-// {id: 3, text: 'Salary', amount: 400},
-// {id: 4, text: 'camera', amount: -68}
-// ];
-// console.log(dummyTransactions)
+
 let transactions = localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
 
 function addTransaction(e) {
